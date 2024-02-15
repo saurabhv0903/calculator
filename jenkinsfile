@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag calculator_demo saurabhv/calculator_demo:latest'
-                    sh 'docker push saurabhv/calculator_container_demo'
+                    sh 'docker tag calculator_demo saurabhv09/calculator_demo:latest'
+                    sh 'docker push saurabhv09/calculator_container_demo'
                     }
                  }
             }
